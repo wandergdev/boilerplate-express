@@ -21,6 +21,11 @@ app.get('/name', function(req, res){
     const lastName = req.query.last;
     res.json({name: `${firstName} ${lastName}`});
 });
+app.post('/name', function(req, res){
+    const firstName = req.body.first;
+    const lastName = req.body.last;
+    res.json({name: `${firstName} ${lastName}`});
+});
 
 app.get('/:word/echo', function(req, res){
     const { word } = req.params;
