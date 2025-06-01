@@ -13,7 +13,7 @@ app.get("/", function(req, res){
 });
 
 app.get('/json', function(req, res){
-    res.json({mesagge: "Hello Json"})
+    res.json({mesagge: "Hello json"})
 });
 
 
